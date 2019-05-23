@@ -1,3 +1,8 @@
 # Examproject
 
-Should contain a short introduction to your project, and show how to produce your results.
+Our examproject consist of three notebooks:
+  1) The dataproject
+  2) The modelproject
+  3) The examproject
+
+The dataproject ... 
