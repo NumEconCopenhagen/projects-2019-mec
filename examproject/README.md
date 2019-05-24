@@ -8,7 +8,7 @@ Our examproject consist of three parts:
      to the GitHub issues
 
 **The dataproject** adresses the development of home care for people aged 65 years and above in Denmark. An API is used to fetch data from tables AED06, AED12 and BY2 from Statistics Denmark. 
-*Note* that in order to fetch the data from Statistics Denmark we use the package `pydst`, which is not a default packages in python, and need to be install to be able to run the the notebook. In the last part of the notebook we have created a map of Denmark to make an easier comparion across municipalities. To create the map we use the package `geopandas`, which is not a defaul packages in python, and need to be install to be able to run the last piece of code in the notebook. 
+*Note* that in order to fetch the data from Statistics Denmark we use the package `pydst`, which is not a default packages in python, and need to be install to be able to run the the notebook. In the last part of the notebook we have created a map of Denmark to make an easier comparion across municipalities. To create the map we use the package `geopandas`, which is not a default packages in python, and need to be install to be able to run the last piece of code in the notebook. 
 - To install `pydst` (works for both windows and mac)*: open terminal and run the command: pip install git+https://github.com/elben10/pydst*
 - To install `geopandas`: 
     - Windows: open terminal and run the command: conda install -c conda-forge geopandas
