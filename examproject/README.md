@@ -4,6 +4,8 @@ Our examproject consist of three parts:
   1) The dataproject
   2) The modelproject
   3) The examproject
+  4) A Feedback.txt file with a list of the groups each group member have given peer feedback to with links
+     to the GitHub issues
 
 **The dataproject** adresses the development of home care for people aged 65 years and above in Denmark. An API is used to fetch data from tables AED06, AED12 and BY2 from Statistics Denmark. 
 *Note* that in order to fetch the data from Statistics Denmark we use the package `pydst`, which is not a default packages in python, and need to be install to be able to run the the notebook. In the last part of the notebook we have created a map of Denmark to make an easier comparion across municipalities. To create the map we use the package `geopandas`, which is not a defaul packages in python, and need to be install to be able to run the last piece of code in the notebook. 
