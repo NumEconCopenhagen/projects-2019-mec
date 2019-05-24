@@ -1,4 +1,4 @@
-# The structure of our portfolio
+# Overview of our portfolio
 
 Our portfolio consists of three parts:
   1) A data project (in the folder /dataproject)
