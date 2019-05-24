@@ -8,7 +8,7 @@ Our portfolio consists of three parts:
      to the GitHub issues
 
 **The data project** addresses the development of home care for people aged 65 years and above in Denmark. An API is used to fetch data from tables AED06, AED12 and BY2 from Statistics Denmark. 
-*Note* that in order to fetch the data from Statistics Denmark we use the package `pydst`, which is not a default package in Python, and need to be installed to be able to run the notebook. In the last part of the notebook, we have created a map of Denmark to make an easy comparison across municipalities. To create the map we use the package `geopandas`, which is not a default package in Python, and need to be installed to be able to run the last piece of code in the notebook. 
+*Dependencies:* In order to fetch the data from Statistics Denmark we use the package `pydst`, which is not a default package in Python, and need to be installed to be able to run the notebook. In the last part of the notebook, we have created a map of Denmark to make an easy comparison across municipalities. To create the map we use the package `geopandas`, which is not a default package in Python, and need to be installed to be able to run the last piece of code in the notebook. 
 - To install `pydst` (works for both windows and mac)*: open terminal and run the command: pip install git+https://github.com/elben10/pydst*
 - To install `geopandas`: 
     - Windows: open terminal and run the command: conda install -c conda-forge geopandas
@@ -21,6 +21,8 @@ Our portfolio consists of three parts:
 When the packages are installed the notebook should run without problems as long as the files: KOMMUNE.dbf, KOMMUNE.prj, KOMMUNE.shp and KOMMUNE.shx are saved the same place as the notebook (which they will be if our entire repository is downloaded together).
 
 **The model project** presents and solves a standard two-good static labour supply model, where agents value leisure and consumption. The model is solved in three ways: theoretically, analytically and numerically. For the numerical optimisation, the chosen algorithm is a sequential (least-squares) quadratic programming (SQP) algorithm (SLSQP). Besides the simple model, we extend the model in two ways by including a proportional income tax and a progressive income tax. The size of the tax payment affects the income and therefore also hours worked and consumption level.
-No additional packages (besides the standard packages in Python) or files are necessary to run the notebook.
+*Dependencies:* No additional packages (besides the standard packages in Python) or files are necessary to run the notebook.
 
-**The examproject** answers the questions on 'human capital accumulation', 'AS-AD model', and 'Exchange economy'. *Note*, that we have used the function `.root_scalar` in the `scipy` package to answer questions on the AS-AD model. However, it might be necessary to run `conda update scipy` in your terminal in order to run the code.  
+**The examproject** answers the questions asked in the notebook provided for the exam.
+*Dependencies:* The notebook should be able to run without problems. However, we have used the function `.root_scalar` in the `scipy` package to answer questions on the AS-AD model. If `.root_scalar`is not availaible it might be necessary to run `conda update scipy` in your terminal to be able to run the notebook. 
+
