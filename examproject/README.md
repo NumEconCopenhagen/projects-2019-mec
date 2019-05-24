@@ -15,9 +15,10 @@ Our examproject consist of three parts:
         2. Uninstall fiona by running the command: conda uninstall fiona
         3. Download fiona wheel and install: can be downloaded from here (https://pypi.python.org/packages/71/ea/908bf078499b30d1ec374eb5baba016a568fc8142ee6ccf72e356d20871c/Fiona-1.7.4-cp27-cp27m-macosx_10_6_intel.whl#md5=971393c23ffc552664b7c694b992fb3e) and run: pip install Fiona-1.7.4-cp27-cp27m-macosx_10_6_intel.whl
         4. Reinstall geopandas by running the command: pip install git+git://github.com/geopandas/geopandas.git     
+
 When the packages are installed the notebook should run without problems as long as the files: KOMMUNE.dbf, KOMMUNE.prj, KOMMUNE.shp and KOMMUNE.shx are saved the same place as the notebook.
 
 **The modelproject** presents and solves a standard two-good static labour supply model, where agents value leisure and consumption. The model is solved in three ways: theoretically, analytically and numerically. For the numerical optimisation, the chosen algorithm is a sequential (least-squares) quadratic programming (SQP) algorithm (SLSQP). Besides the simple model, we extend the model in two ways by including a proportional income tax and a progressive income tax. The size of the tax payment affects the income and therefore also hours worked and consumption level.
 No additional packages (besides the standard packages in Python) or files are necessary to run the notebook.
 
-**The examproject** answers the questions on 'human capital accumulation', 'AS-AD model', and 'Exchange economy'.
+**The examproject** answers the questions on 'human capital accumulation', 'AS-AD model', and 'Exchange economy'. *Note*, that we have used the function `.root_scalar` in the `scipy` package. However, it can be necessary to run `conda update scipy` in your terminal in order to run the code.  
